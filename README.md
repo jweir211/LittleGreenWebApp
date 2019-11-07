@@ -10,7 +10,7 @@ that can be bought from the little green larder.
 
 Distribution of Tasks*
 
-Jack: CSS, Speaking to the Little Green Larder to get recipe's etc, Homepage, Write Product Pitch
+Jack: CSS, Speaking to the Little Green Larder to get recipe's etc, Homepage, Write Product Pitch (with help)
 John: Map, Nav Links (with help)
 Jennifer: Recipe Carousel, References
 Jonas: Quiz, Research for feedback for quiz
