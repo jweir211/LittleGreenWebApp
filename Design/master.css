@@ -1,15 +1,33 @@
+
+/*sets background-color of body content to an off white color*/
 body {
   background-color :  #f5f2d0;
+  text-align: justify;
 }
 
+main {
+  margin-left: 25px;
+  margin-right:25px;
+}
+
+/*Will wrap around all page content and set viewport height to 100%*/
 #page-container {
-  position: relative;
   min-height: 100vh;
+  position: relative;
 }
 
+/*creates a footer that remains at bottom of page*/
 footer {
   position: absolute;
   bottom: 0;
-  width: 100%;;
-  background-color : #7dc95e       /* Footer height */
+  width: 100%;
+  background-color : #7dc95e;
+  text-indent: 30px;
+  text-align:justify;
+
+}
+
+ol {
+  font-size: 9px;
+  font-weight: bold;
 }
