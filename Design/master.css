@@ -11,7 +11,7 @@ main {
 }
 
 /*Will wrap around all page content and set viewport height to 100%*/
-#page-container {
+.page-container {
   min-height: 100vh;
   position: relative;
 }
@@ -26,8 +26,10 @@ footer {
   color: #222222;
 }
 
-ol {
+.f{
+  margin: auto;
   text-align:center;
   font-size: 9px;
   font-weight: bold;
+  line-height: 50%;
 }
