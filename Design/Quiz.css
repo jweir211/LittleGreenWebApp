@@ -1,0 +1,29 @@
+.hidden{
+  display: none;
+}
+
+.btn-orange{
+
+  color:#222222;
+  background-color:#dd614a;
+  border-color:#dd614a
+}
+
+.btn-orange:hover{
+  color:#222222;
+  background-color:#c13c25;
+  border-color:#e27b69
+}
+
+.answer{
+
+  margin-bottom: 20
+
+}
+
+.quiz-label{
+
+  margin: auto;
+  
+
+}
