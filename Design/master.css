@@ -8,6 +8,7 @@ body {
   top: 70px;
 }
 
+/*adds margins for main content*/
 main {
   margin-left: 25px;
   margin-right:25px;
@@ -25,6 +26,7 @@ footer {
   color: #222222;
 }
 
+/*styling for footer content*/
 .f{
   margin: auto;
   text-align:center;
