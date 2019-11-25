@@ -1,17 +1,26 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="viewport"
+    content="
+      width=device-width,
+      initial-scale=1,
+      minimum-scale=1,
+      maximum-scale=1
+    "
+  />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="master.css">
+  <link rel="stylesheet" href="unsemantic-grid-responsive.css">
   <title>Home - Little Green Web App</title>
 </head>
 <body>
 
   <header>
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbar-expand" style="background-color: #3e8914;">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbar-expand mobile-suffix-10" style="background-color: #3e8914;">
       <img src="leaf.png" height="50px" alt="leaf img">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -53,8 +62,8 @@
       <br>
 
       <section>
-        <div class = "row">
-          <div class="col">
+        <div class = "grid-container">
+          <div class="grid-30 pull-10 mobile-grid-100">
             <h4 align = "center"> Quick Facts </h4>
               <p></p>
             <ul class = "h">
@@ -66,13 +75,13 @@
               <li> The great pacific garbage patch is an area of the ocean 3 times the size of france that currents have swept a lot of the plastic and waste that has been dropped in the ocean into one area.</li>
             </ul>
           </div>
-          <div class = "col">
+          <div class = "grid-40 mobile grid 50">
             <h4 align="center">Model Showing Scale and Density of the Great Pacific Garbage Patch</h4>
             <img src="https://www.thesun.co.uk/wp-content/uploads/2018/03/af-map-garbage-patch.jpg?strip=all&w=750" width = 100% alt="gpgp">
             <p></p>
             <p class = f> Image Source: The Sun </p>
           </div>
-          <div class="col">
+          <div class="grid-30 push-10 mobile-grid 50">
             <h4 align = "center"> Charities Working to Help </h4>
             <br>
             <ul class = "h">
@@ -85,7 +94,6 @@
               <li><span><img src = "http://www.manandvanwestonsupermare.co.uk/wp-content/uploads/environment-WEEE-logo.png" height = 45px alt = "WEEE"> </span><a class = "ref" href="http://www.weeecharity.co.uk/"> WeeeCharity - Charity set up in UK to collect and dispose of electrical waste and components. </a> </li>
             </ul>
           </div>
-
         </div>
         <br>
       </section>
@@ -96,17 +104,17 @@
   </main>
   <footer>
     <div class="row">
-      <div class="col f">
+      <div class="grid-20 mobile-grid-0 f">
 
        <h6><b> References For Page Only </b></h6>
-          <p><a class = "ref" href = "https://www.ovoenergy.com/blog/green/10-shocking-facts-about-waste.html"> https://www.ovoenergy.com/blog/green/10-shocking-facts-about-waste.html </a></p>
-          <p><a class = "ref" href = "https://www.thesun.co.uk/news/5878949/great-pacific-garbage-patch-plastic-dump-growing/">https://www.thesun.co.uk/news/5878949/great-pacific-garbage-patch-plastic-dump-growing/</a></p>
-          <p><a class = "ref" href = "https://wasteaid.org/story/">https://wasteaid.org/story/</a> </p>
+          <p><a class = "ref" href = "https://www.ovoenergy.com/blog/green/10-shocking-facts-about-waste.html"> Ovo Energy </a></p>
+          <p><a class = "ref" href = "https://www.thesun.co.uk/news/5878949/great-pacific-garbage-patch-plastic-dump-growing/"> The Sun </a></p>
+          <p><a class = "ref" href = "https://wasteaid.org/story/"> WasteAid Story</a> </p>
       </div>
-      <div class = "col f">
+      <div class = "grid-60 mobile-grid-100 f">
         <h3> Little Green Web App </h3>
       </div>
-      <div class="col f">
+      <div class="grid-20 mobile-grid-0 f">
         <h6><b>Report An Issue</b></h6>
           <p>@Jack Weir</p>
                       <p>Email:Joekl.Blooogles@ClotMail.com</p>
