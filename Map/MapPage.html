@@ -56,6 +56,59 @@
           center: [-2.982, 56.458],
           zoom: 14
         });
+
+        map.on('load', function() {
+            map.addLayer({
+              "id": "points",
+              "type": "symbol",
+              "source": {
+                "type": "geojson",
+                "data": {
+                  "type": "FeatureCollection",
+                  "features": [{
+                    "type": "Feature",
+                    "geometry": {
+                      "type": "Point",
+                      "coordinates": [-2.982495, 56.458457]
+                    },
+                    "properties": {
+                      "title": "Queen Mother Building",
+                      "icon": "college"
+                    }
+                  },
+                  {
+                    "type": "Feature",
+                    "geometry": {
+                      "type": "Point",
+                      "coordinates": [-2.983495, 56.458100]
+                    },
+                    "properties": {
+                      "title": "Secret Rocket Base",
+                      "icon": "rocket"
+                    }
+                  },
+                  {
+                    "type": "Feature",
+                    "geometry": {
+                      "type": "Point",
+                      "coordinates": [-2.980827, 56.458160]
+                    },
+                    "properties": {
+                      "title": "Library",
+                      "icon": "triangle"
+                    }
+                  }]
+                }
+              },
+              "layout": {
+                "icon-image": "{icon}-15",
+                "text-field": "{title}",
+                "text-font": ["Roboto Regular"],
+                "text-offset": [0.6, 0.1],
+                "text-anchor": "left",
+              }
+            });
+          });
         map.addControl(new mapboxgl.NavigationControl());
       </script>
   </main>
