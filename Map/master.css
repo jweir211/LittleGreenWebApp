@@ -6,6 +6,7 @@ body {
   text-align: justify;
   position: absolute;
   top: 70px;
+  width : 100%;
 }
 
 /*adds margins for main content*/
@@ -42,7 +43,11 @@ footer {
     list-style: circle;
 }
 #map{
-  height: 400px;
-  width: 960px;
+  height: 600px;
+  width: 75%;
   margin: auto;
+  margin-bottom: 40px;
+}
+main h1{
+  text-align: center;
 }
