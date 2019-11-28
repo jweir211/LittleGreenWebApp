@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src='https://api.mapbox.com/mapbox-gl-js/v1.3.1/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v1.3.1/mapbox-gl.css' rel='stylesheet' />
   <link rel="stylesheet" href="master.css">
   <title>Map - Little Green Web App</title>
 </head>
@@ -45,24 +47,17 @@
   </header>
   <main>
       <h1> Map </h1>
-      <br>
-      <p> This is not a Map yet. </p
-      <p>       | </p>
-      <p>       | </p>
-      <p>       | </p>
-      <p>       | </p>
-      <p>       | </p>
-      <p>       | </p>
-      <p>       | </p>
-      <p>       | </p>
-      <p>       | </p>
-      <p>       | </p>
-      <p>       | </p>
-      <p>       | </p>
-      <p>       v </p>
-      <br>
-
-
+      <div id='map'></div>
+      <script>
+        mapboxgl.accessToken = 'pk.eyJ1Ijoiam9obmhhcnJvdzE1IiwiYSI6ImNrM2kzeHV2bzAyZTMzbXBsdnByMnM0YnQifQ.YkZPPtwus5JIoGyeF7zi5A';
+        var map = new mapboxgl.Map({
+          container: 'map',
+          style: 'mapbox://styles/mapbox/dark-v9',
+          center: [-2.982, 56.458],
+          zoom: 14
+        });
+        map.addControl(new mapboxgl.NavigationControl());
+      </script>
   </main>
   <footer>
     <div class="row">
