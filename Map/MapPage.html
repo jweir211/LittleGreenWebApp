@@ -46,13 +46,13 @@
     </nav>
   </header>
   <main>
-      <h1> Map </h1>
+      <h1> Map of Eco-Friendly Establishments </h1>
       <div id='map'></div>
       <script>
         mapboxgl.accessToken = 'pk.eyJ1Ijoiam9obmhhcnJvdzE1IiwiYSI6ImNrM2kzeHV2bzAyZTMzbXBsdnByMnM0YnQifQ.YkZPPtwus5JIoGyeF7zi5A';
         var map = new mapboxgl.Map({
           container: 'map',
-          style: 'mapbox://styles/mapbox/dark-v9',
+          style: 'mapbox://styles/mapbox/light-v10',
           center: [-2.982, 56.458],
           zoom: 16
         });
@@ -107,7 +107,6 @@
                 "text-font": ["Roboto Regular"],
                 "text-offset": [0.6, 0.1],
                 "text-anchor": "left",
-                "text-color" : "white",
               }
             });
             map.on('click', 'points', function(e) {
