@@ -7,13 +7,11 @@ body {
   position: absolute;
   top: 70px;
 }
-
 /*adds margins for main content*/
 main {
   margin-left: 25px;
   margin-right:25px;
 }
-
 
 .ref{
   color: #dd614a
