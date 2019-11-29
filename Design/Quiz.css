@@ -2,6 +2,25 @@
   display: none;
 }
 
+
+
+.answer{
+
+  margin-bottom: 20
+
+}
+
+.quiz-label{
+
+  margin: auto;
+
+
+}
+
+/*
+Colouring
+*/
+
 .btn-orange{
 
   color:#222222;
@@ -15,15 +34,28 @@
   border-color:#e27b69
 }
 
-.answer{
+.bg-lightgreen{
 
-  margin-bottom: 20
+background-color: #7dc95e;
 
 }
 
-.quiz-label{
+a.bg-lightgreen:focus,a.bg-lightgreen:hover,button.bg-lightgreen:focus,button.bg-lightgreen:hover{
+  background-color:#5aac39;
+}
 
-  margin: auto;
-  
+.bg-natural{
+  background-color: #ede8ab;
+}
 
+a.bg-natural:focus,a.bg-natural:hover,button.bg-natural:focus,button.bg-natural:hover{
+  background-color:#e9e296;
+}
+
+.bg-green{
+  background-color: #3e8914;
+}
+
+a.bg-green:focus,a.bg-green:hover,button.bg-green:focus,button.bg-green:hover{
+  background-color:##29590d;
 }
