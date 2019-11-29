@@ -99,14 +99,14 @@
                   <h3>Question 1</h3>
                 </div>
                 <div class="card-body bg-natural">
-                  <p>What is up my dudes?</p>
+                  <p>Do you eat vegetarian?</p>
                   <div class="card-deck">
                     <div class="card bg-lightgreen">
                       <label class="form-check-label quiz-label">
 
                         <div class="card-body text-center">
                           <div class="form-check">
-                            <input autocomplete="off" type="radio" class="form-check-input" id="question1.1" name="question1">Option 1
+                            <input autocomplete="off" type="radio" class="form-check-input" id="question1.1" name="question1" value="4">I only eat vegetarian/vegan
                           </div>
                         </div>
                       </label>
@@ -116,9 +116,7 @@
                       <label class="form-check-label">
                         <div class="card-body text-center">
                           <div class="form-check">
-                            <input autocomplete="off" type="radio" class="form-check-input" id="question1.2" name="question1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                            aliqua.
-                            Accumsan tortor posuere ac ut consequat semper viverra nam libero. Etiam tempor orci eu lobortis elementum nibh. Blandit turpis cursus in hac habitasse.
+                            <input autocomplete="off" type="radio" class="form-check-input" id="question1.2" name="question1" value="3">I have vegetarian days in my week
                           </div>
                         </div>
                       </label>
@@ -129,7 +127,7 @@
                       <label class="form-check-label">
                         <div class="card-body text-center">
                           <div class="form-check">
-                            <input autocomplete="off" type="radio" class="form-check-input" id="question1.3" name="question1">Option 3
+                            <input autocomplete="off" type="radio" class="form-check-input" id="question1.3" name="question1" value="2">I have thought about trying it
                           </div>
                         </div>
                       </label>
@@ -138,7 +136,7 @@
                       <label class="form-check-label">
                         <div class="card-body text-center">
                           <div class="form-check">
-                            <input autocomplete="off" type="radio" class="form-check-input" id="question1.4" name="question1">Option 4
+                            <input autocomplete="off" type="radio" class="form-check-input" id="question1.4" name="question1" value="1">I couldn’t live a day without meat
                           </div>
                         </div>
                       </label>
@@ -148,8 +146,12 @@
               </div>
               <div class="card-footer">
                 <div class="text-right">
-                  <button onclick="next('question-1','question-2','question1.1','question1.2','question1.3','question1.4');" type="button" id="btn-question-1" class="btn btn-orange ">Next Question</button>
+                  <button onclick="next('question-1','question-2','question1.1','question1.2','question1.3','question1.4');" type="button" id="btn-next-question-1" class="btn btn-orange ">Next Question</button>
                 </div>
+
+                <!--       <div class="text-left">
+                  <button onclick="back('question-1','question-2');" type="button" id="btn-prev-question-1" class="btn btn-orange ">Prev. Question</button>
+        -->
               </div>
             </div>
             <div class="col-lg-2 col-md-1 col-sm-0"></div>
@@ -172,14 +174,14 @@
                   <h3>Question 2</h3>
                 </div>
                 <div class="card-body bg-natural">
-                  <p>What is up my dudes?</p>
+                  <p>Do you fight food waste?</p>
                   <div class="card-deck">
                     <div class="card bg-lightgreen">
                       <label class="form-check-label quiz-label">
 
                         <div class="card-body text-center">
                           <div class="form-check">
-                            <input autocomplete="off" type="radio" class="form-check-input" id="question2.1" name="question2">Option 1
+                            <input autocomplete="off" type="radio" class="form-check-input" id="question2.1" name="question2" value="4">I try everything I can to fight it, including composting, purchase only what I need, save for next day.
                           </div>
                         </div>
                       </label>
@@ -189,8 +191,7 @@
                       <label class="form-check-label">
                         <div class="card-body text-center">
                           <div class="form-check">
-                            <input autocomplete="off" type="radio" class="form-check-input" id="question2.2" name="question2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Accumsan tortor posuere ac ut consequat semper viverra nam libero. Etiam tempor orci eu lobortis elementum nibh. Blandit turpis cursus in hac habitasse.
+                            <input autocomplete="off" type="radio" class="form-check-input" id="question2.2" name="question2" value="3"> I do when I think about it but I don’t go out of my way for it.
                           </div>
                         </div>
                       </label>
@@ -201,7 +202,7 @@
                       <label class="form-check-label">
                         <div class="card-body text-center">
                           <div class="form-check">
-                            <input autocomplete="off" type="radio" class="form-check-input" id="question2.3" name="question2">Option 3
+                            <input autocomplete="off" type="radio" class="form-check-input" id="question2.3" name="question2" value="2">I don’t really think about it.
                           </div>
                         </div>
                       </label>
@@ -210,7 +211,7 @@
                       <label class="form-check-label">
                         <div class="card-body text-center">
                           <div class="form-check">
-                            <input autocomplete="off" type="radio" class="form-check-input" id="question2.4" name="question2">Option 4
+                            <input autocomplete="off" type="radio" class="form-check-input" id="question2.4" name="question2" value="1">What is food waste.
                           </div>
                         </div>
                       </label>
@@ -219,50 +220,150 @@
                 </div>
               </div>
               <div class="card-footer">
+                <div class="row">
+                  <div class="col">
+                    <div class="text-left">
+                      <button onclick="back('question-2','question-1');" type="button" id="btn-prev-question-2" class="btn btn-orange ">Prev. Question</button>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="text-right">
 
-                <div class="text-right">
+                      <button onclick="next('question-2','question-3','question2.1','question2.2','question2.3','question2.4')" type="button" id="btn-prev-question-2" class="btn btn-orange">Next Question</button>
+                    </div>
+                  </div>
 
-                  <button onclick="nextQuestion()" type="button" class="btn btn-orange hidden">Next Question</button>
                 </div>
+
+              </div>
+
+            </div>
+            <div class="col-lg-2 col-md-1 col-sm-0"></div>
+          </div>
+        </article>
+
+
+
+
+
+
+        <article class="hidden" id="question-3">
+
+          <div class="row">
+            <div class="col-lg-2 col-md-1 col-sm-0"></div>
+            <div class="col-lg-8 col-md-10 col-sm">
+              <div class="card">
+                <div class="card-header bg-green">
+                  <h3>Question 3</h3>
+                </div>
+                <div class="card-body bg-natural">
+                  <p>Do you recycle?</p>
+                  <div class="card-deck">
+                    <div class="card bg-lightgreen">
+                      <label class="form-check-label quiz-label">
+
+                        <div class="card-body text-center">
+                          <div class="form-check">
+                            <input autocomplete="off" type="radio" class="form-check-input" id="question3.1" name="question3" value="4">I actively try to recycle everything I can, and try to focus on buying things that are recyclable.
+                          </div>
+                        </div>
+                      </label>
+
+                    </div>
+                    <div class="card bg-lightgreen">
+                      <label class="form-check-label">
+                        <div class="card-body text-center">
+                          <div class="form-check">
+                            <input autocomplete="off" type="radio" class="form-check-input" id="question3.2" name="question3" value="3">I recycle most things and only the easy stuff like glass plastic and metal.
+                          </div>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="card-deck">
+                    <div class="card bg-lightgreen">
+                      <label class="form-check-label">
+                        <div class="card-body text-center">
+                          <div class="form-check">
+                            <input autocomplete="off" type="radio" class="form-check-input" id="question3.3" name="question3" value="2">I only recycle when I get reminded with a recycle.
+                          </div>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="card bg-lightgreen">
+                      <label class="form-check-label">
+                        <div class="card-body text-center">
+                          <div class="form-check">
+                            <input autocomplete="off" type="radio" class="form-check-input" id="question3.4" name="question3" value="1">I don’t really recycle maybe unless I get reminded and it is convenient
+                          </div>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="row">
+                  <div class="col">
+                    <div class="text-left">
+                      <button onclick="back('question-3','question-2');" type="button" id="btn-prev-question-2" class="btn btn-orange ">Prev. Question</button>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="text-right">
+
+                      <button onclick="nextQuestion('question-3','question-4','question3.1','question3.2','question3.3','question3.4')" type="button" id="btn-prev-question-3" class="btn btn-orange ">Next Question</button>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-1 col-sm-0"></div>
+          </div>
+        </article>
+        <article class="question" id="Question4">
+
+        </article>
+
+        <article class="Result hidden" id="Result">
+
+          <div class="row">
+            <div class="col-lg-2 col-md-1 col-sm-0"></div>
+            <div class="col-lg-8 col-md-10 col-sm">
+              <div class="card">
+                <div class="card-header bg-green">
+                  <h3>Result</h3>
+                </div>
+                <div class="card-body bg-natural">
+                  <div class="card-deck">
+
+                    <div class="choiseResult hidden" id="Result1.1">
+                      <p>super1</p>
+                    </div>
+                    <div class="choiseResult hidden" id="Result1.2">
+                      <p>maybe2</p>
+                    </div>
+                    <div class="choiseResult hidden" id="Result1.3">
+                      <p>nice3</p>
+                    </div>
+                    <div class="choiseResult hidden" id="Result1.4">
+                      <p>say what4</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
               </div>
             </div>
             <div class="col-lg-2 col-md-1 col-sm-0"></div>
           </div>
         </article>
 
-        <article class="question" id="Question3">
-
-        </article>
-        <article class="question" id="Question4">
-
-        </article>
         <div class="row">
           <div class="col-lg-2 col-md-1 col-sm-0"></div>
           <div class="col-lg-8 col-md-10 col-sm"><button onclick="result();" id="button-answer" type="button" class="btn btn-orange ">Get Result</button></div>
-          <div class="col-lg-2 col-md-1 col-sm-0"></div>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-2 col-md-1 col-sm-0"></div>
-          <div class="col-lg-8 col-md-10 col-sm">
-            <article class="Result hidden" id="Result">
-              <h3>Result</h3>
-              <p></p>
-
-              <div class="choiseResult hidden" id="Result1.1">
-                <p>super1</p>
-              </div>
-              <div class="choiseResult hidden" id="Result1.2">
-                <p>maybe2</p>
-              </div>
-              <div class="choiseResult hidden" id="Result1.3">
-                <p>nice3</p>
-              </div>
-              <div class="choiseResult hidden" id="Result1.4">
-                <p>say what4</p>
-              </div>
-            </article>
-          </div>
           <div class="col-lg-2 col-md-1 col-sm-0"></div>
         </div>
 
@@ -325,6 +426,13 @@
           }
         }
 
+        function back(question, prev) {
+
+          document.getElementById(question).style.display = "none";
+          document.getElementById(prev).style.display = "block";
+
+        }
+
 
 
         function next(question, next, radio1, radio2, radio3, radio4) {
@@ -335,7 +443,7 @@
             console.log("is selected");
           } else {
             console.log("is not selected");
-             alert("Please select an answer");
+            alert("Please select an answer");
           }
 
         }
@@ -349,18 +457,18 @@
     <div class="row">
       <div class="col f">
         <!footer references>
-       <h6><b> References For Page Only </b></h6>
+          <h6><b> References For Page Only </b></h6>
           <p>Reference 1</p>
           <p>Reference 2</p>
           <p>Reference 3</p>
       </div>
-      <div class = "col f">
+      <div class="col f">
         <!title>
-        <h3> Little Green Web App </h3>
+          <h3> Little Green Web App </h3>
       </div>
       <div class="col f">
         <!"contact and page author, no real contact details">
-        <h6><b>Report An Issue</b></h6>
+          <h6><b>Report An Issue</b></h6>
           <p>@Page Author</p>
           <!Not a real email!!!>
             <p>Email:Joe.Bloggs@SlotMail.org.uk</p>
