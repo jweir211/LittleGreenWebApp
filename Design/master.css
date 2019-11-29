@@ -1,24 +1,24 @@
 
+
 /*sets background-color of body content to an off white color*/
 body {
   background-color :  #f5f2d0;
   text-align: justify;
+  position: absolute;
+  top: 70px;
 }
 
+/*adds margins for main content*/
 main {
   margin-left: 25px;
   margin-right:25px;
 }
 
-/*Will wrap around all page content and set viewport height to 100%*/
-.page-container {
-  min-height: 100vh;
-  position: relative;
-}
+
 
 /*creates a footer that remains at bottom of page*/
 footer {
-  position: absolute;
+  position: static;
   bottom: 0;
   width: 100%;
   background-color : #7dc95e;
@@ -26,10 +26,12 @@ footer {
   color: #222222;
 }
 
+/*styling for footer content*/
 .f{
   margin: auto;
   text-align:center;
   font-size: 9px;
   font-weight: bold;
   line-height: 50%;
+
 }
