@@ -526,7 +526,7 @@
                   <div class="row">
                     <div class="col">
                       <div class="text-left">
-                        <button onclick="back('question-6','question-5');" type="button" id="btn-prev-question-7" class="btn btn-orange ">Prev. Question</button>
+                        <button onclick="back('question-6','question-5');" type="button" id="btn-prev-question-6" class="btn btn-orange ">Prev. Question</button>
                       </div>
                     </div>
                     <div class="col">
@@ -884,27 +884,7 @@
 
 
 
-      if (document.getElementById("question7.1").checked) {
-        document.getElementById("Result7.1").style.display = "block";
-        document.getElementById("Result7.2").style.display = "none";
-        document.getElementById("Result7.3").style.display = "none";
-        document.getElementById("Result7.4").style.display = "none";
-      } else if (document.getElementById("question7.2").checked) {
-        document.getElementById("Result7.2").style.display = "block";
-        document.getElementById("Result7.1").style.display = "none";
-        document.getElementById("Result7.3").style.display = "none";
-        document.getElementById("Result7.4").style.display = "none";
-      } else if (document.getElementById("question7.3").checked) {
-        document.getElementById("Result7.3").style.display = "block";
-        document.getElementById("Result7.1").style.display = "none";
-        document.getElementById("Result7.2").style.display = "none";
-        document.getElementById("Result7.4").style.display = "none";
-      } else if (document.getElementById("question7.4").checked) {
-        document.getElementById("Result7.4").style.display = "block";
-        document.getElementById("Result7.1").style.display = "none";
-        document.getElementById("Result7.2").style.display = "none";
-        document.getElementById("Result7.3").style.display = "none";
-      }
+
 
 
 
@@ -912,7 +892,7 @@
 
     }
 
-    function computeForm(form, ) {
+    function computeForm(form) {
       var total = 0
 
       for (var count = 0; count < 4; count++) {
@@ -934,9 +914,7 @@
         if (form.question1[count].checked) {
           var total = total + parseInt(form.question6[count].value);
         }
-        if (form.question1[count].checked) {
-          var total = total + parseInt(form.question7[count].value);
-        }
+
 
       }
 
