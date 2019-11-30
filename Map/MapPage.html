@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src='https://api.mapbox.com/mapbox-gl-js/v1.3.1/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v1.3.1/mapbox-gl.css' rel='stylesheet' />
+  <link rel="stylesheet" href="master.css">
+  <title>Map - Little Green Web App</title>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbar-expand" style="background-color: #3e8914;">
+      <img src="leaf.png" height="50px" alt="leaf img">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#"> <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="HomePage/Home-Page.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Design/Quiz.html">Quiz</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Map/MapPage.html">Map</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">EcoRecipes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">Links</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">All-References</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+      <h1> Map of Eco-Friendly Establishments </h1>
+      <div id='map'></div>
+      <script>
+        mapboxgl.accessToken = 'pk.eyJ1Ijoiam9obmhhcnJvdzE1IiwiYSI6ImNrM2kzeHV2bzAyZTMzbXBsdnByMnM0YnQifQ.YkZPPtwus5JIoGyeF7zi5A';
+        var map = new mapboxgl.Map({
+          container: 'map',
+          style: 'mapbox://styles/mapbox/light-v10',
+          center: [-2.982, 56.458],
+          zoom: 14
+        });
+
+        map.on('load', function() {
+            map.addLayer({
+              "id": "points",
+              "type": "symbol",
+              "source": {
+                "type": "geojson",
+                "data": {
+                  "type": "FeatureCollection",
+                  "features": [{
+                    "type": "Feature",
+                    "geometry": {
+                      "type": "Point",
+                      "coordinates": [-2.992330, 56.455920]
+                    },
+                    "properties": {
+                      "title": "The Little Green Larder",
+                      "icon": "shop",
+                      "description" : "<strong>The Little Green Larder</strong><p><a href=\"https://www.facebook.com/thelittlegreenlarder/\" target=\"_blank\" title=\"Opens in a new window\">The Little Green Larder</a> offers a plastic free shopping experience, with zero waste alternatives to inspire us to a greener future.</p>"
+                    }
+                  },
+                  {
+                    "type": "Feature",
+                    "geometry": {
+                      "type": "Point",
+                      "coordinates": [-2.970817, 56.463185]
+                    },
+                    "properties": {
+                      "title": "Brewdog",
+                      "icon": "alcohol-shop",
+                      "description" : "<strong>Brewdog</strong><p><a href=\"https://www.brewdog.com/bars/uk/brewdog-dundee\" target=\"_blank\" title=\"Opens in a new window\">Brewdog</a> is a no-nonsense chain bar specialising in the Scottish brewery's craft beers, with regular guest brews. Brewdog is a self-sustaining and eco-freindly company.</p>"
+                    }
+                  },
+                  {
+                    "type": "Feature",
+                    "geometry": {
+                      "type": "Point",
+                      "coordinates": [-2.985577, 56.462524]
+                    },
+                    "properties": {
+                      "title": "Recycling Centre",
+                      "icon": "shop",
+                      "description" : "<strong>Recycling Centre</strong><p><a href=\"http://taysidereusers.co.uk/\" target=\"_blank\" title=\"Opens in a new window\">This</a> is a recycling centre.</p>"
+                    }
+                  },
+                  {
+                    "type": "Feature",
+                    "geometry": {
+                      "type": "Point",
+                      "coordinates": [-2.980194, 56.461721]
+                    },
+                    "properties": {
+                      "title": "Recycling Centre",
+                      "icon": "shop",
+                      "description" : "<strong>Recycling Centre</strong><p><a href=\"https://www.pc-recycling.com/\" target=\"_blank\" title=\"Opens in a new window\">This</a> is a recycling centre.</p>"
+                    }
+                  },
+                  {
+                    "type": "Feature",
+                    "geometry": {
+                      "type": "Point",
+                      "coordinates": [-2.967389, 56.461122]
+                    },
+                    "properties": {
+                      "title": "Birchwood Emporium",
+                      "icon": "cafe",
+                      "description" : "<strong>Birchwood Emporium</strong><p><a href=\"https://www.facebook.com/pg/BirchwoodEmporium/posts/\" target=\"_blank\" title=\"Opens in a new window\">Birchwood Emporium</a> is a whole food cafe which caters to every eco-freindly eating need.</p>"
+                    }
+                  },
+                  {
+                    "type": "Feature",
+                    "geometry": {
+                      "type": "Point",
+                      "coordinates": [-2.966727, 56.460790]
+                    },
+                    "properties": {
+                      "title": "Heart Space Whole Foods",
+                      "icon": "shop",
+                      "description" : "<strong>Heart Space Whole Foods</strong><p><a href=\"http://wholefoods.heartspacedundee.co.uk/\" target=\"_blank\" title=\"Opens in a new window\">Heart Space Whole Foods</a> provides local and organic produce and many other eco-friendly things.</p>"
+                    }
+                  },
+                  {
+                    "type": "Feature",
+                    "geometry": {
+                      "type": "Point",
+                      "coordinates": [-2.984205, 56.462257]
+                    },
+                    "properties": {
+                      "title": "SCRAPantics",
+                      "icon": "shop",
+                      "description" : "<strong>SCRAPantics</strong><p><a href=\"https://www.facebook.com/2meadowmill/\" target=\"_blank\" title=\"Opens in a new window\">SCRAPantics</a> recycles industry excess into art & design materials for use in the celebration of community togetherness.</p>"
+                    }
+                  },
+                  {
+                    "type": "Feature",
+                    "geometry": {
+                      "type": "Point",
+                      "coordinates": [-2.970994, 56.459657]
+                    },
+                    "properties": {
+                      "title": "Cex",
+                      "icon": "shop",
+                      "description" : "<strong>Cex</strong><p><a href=\"https://uk.webuy.com/site/storeDetail/?branchId=198\" target=\"_blank\" title=\"Opens in a new window\">Cex</a> is a retail chain which specialises in buying and selling DVDs, video games, and digital devices. Cex is eco-friendly as the things they sell are have all been reused which helps the environment.</p>"
+                    }
+                  }]
+                }
+              },
+              "layout": {
+                "icon-image": "{icon}-15",
+                "text-field": "{title}",
+                "text-font": ["Roboto Regular"],
+                "text-offset": [0.6, 0.1],
+                "text-anchor": "left",
+              }
+            });
+            map.on('click', 'points', function(e) {
+              var coordinates = e.features[0].geometry.coordinates.slice();
+              var description = e.features[0].properties.description;
+
+              while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+                coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+              }
+
+              new mapboxgl.Popup()
+              .setLngLat(coordinates)
+              .setHTML(description)
+              .addTo(map);
+            });
+
+            map.on('mouseenter', 'points', function() {
+              map.getCanvas().style.cursor = 'pointer';
+            });
+
+            map.on('mouseleave', 'points', function() {
+              map.getCanvas().style.cursor = '';
+            });
+          });
+        map.addControl(new mapboxgl.NavigationControl());
+      </script>
+  </main>
+  <footer>
+    <div class="row">
+      <div class="col f">
+
+       <h6><b> References For Page Only </b></h6>
+          <p><a class = "ref" href = "https://www.ovoenergy.com/blog/green/10-shocking-facts-about-waste.html"> https://www.ovoenergy.com/blog/green/10-shocking-facts-about-waste.html </a></p>
+          <p><a class = "ref" href = "https://www.thesun.co.uk/news/5878949/great-pacific-garbage-patch-plastic-dump-growing/">https://www.thesun.co.uk/news/5878949/great-pacific-garbage-patch-plastic-dump-growing/</a></p>
+          <p><a class = "ref" href = "https://wasteaid.org/story/">https://wasteaid.org/story/</a> </p>
+      </div>
+      <div class = "col f">
+        <h3> Little Green Web App </h3>
+      </div>
+      <div class="col f">
+        <h6><b>Report An Issue</b></h6>
+          <p>@John Harrow</p>
+                      <p>Email:Jdsafkl.Blooogles@ClotMail.com</p>
+            <p>Contact No: +44 7823 12345</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+
+
+</html>
