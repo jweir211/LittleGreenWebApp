@@ -4,21 +4,22 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-control" content="no-store">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="master.css">
   <link rel="stylesheet" href="Quiz.css">
-  <meta http-equiv="Cache-control" content="no-store">
+  <link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre|Vidaloka&display=swap" rel="stylesheet">
 
-  <title>Template</title>
+  <title>The Little Green Web App - Quiz</title>
 </head>
 
 <body>
   <header>
-    <nav class="navbar navbar-dark navbar-expand" style="background-color: #3e8914;">
-      <img src="leaf.png" height="60px" alt="leaf img">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbar-expand" style="background-color: #3e8914;">
+      <img src="leaf.png" height="50px" alt="leaf img">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -28,16 +29,22 @@
             <a class="nav-link" href="#"> <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Quiz</a>
+            <a class="nav-link" href="Home-Page.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Map</a>
+            <a class="nav-link" href="Quiz.html">Quiz</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="MapPage.html">Map</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">EcoRecipes</a>
           </li>
           <li class="nav-item">
             <a class="nav-link " href="#">Links</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">All-References</a>
           </li>
         </ul>
       </div>
@@ -49,7 +56,8 @@
         <div class="col-lg-2 col-md-1 col-sm-0"></div>
         <div class="col-lg-8 col-md-10 col-sm">
           <h1> Quiz </h1>
-          <p> We all want to live life the way that is best for ourselves, but what if you could live a life that not only is great for you but also for everyone around you. This quiz will help you figure out where you are doing well and where you could become better, for both yourself and the environment.</p>
+          <p> We all want to live life the way that is best for ourselves, but what if you could live a life that not only is great for you but also for everyone around you. This quiz will help you figure out where you are doing well and where you
+            could become better, for both yourself and the environment.</p>
         </div>
         <div class="col-lg-2 col-md-1 col-sm-0"></div>
       </div>
@@ -61,7 +69,8 @@
           <div class="col-lg-8 col-md-10 col-sm">
             <div class="text-center">
               <h3>Eco-friendly quiz</h3>
-              <p>This quiz has 6 questions about 6 different topics in living eco-friendly, please answer them truthfully as the answer you get is individually designed to fit the exact way you answer this quiz. Remember no matter how you do, there are ways to get better without sacrificing all your time or way of life. Just take small steps and remember there are a lot of people out there that are willing to help.</p>
+              <p>This quiz has 6 questions about 6 different topics in living eco-friendly, please answer them truthfully as the answer you get is individually designed to fit the exact way you answer this quiz. Remember no matter how you do, there
+                are ways to get better without sacrificing all your time or way of life. Just take small steps and remember there are a lot of people out there that are willing to help.</p>
             </div>
 
           </div>
@@ -124,16 +133,17 @@
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="card-footer">
-                  <div class="text-right">
-                    <button onclick="next('question-1','question-2','question1.1','question1.2','question1.3','question1.4');" type="button" id="btn-next-question-1" class="btn btn-orange ">Next Question</button>
-                  </div>
+                  <div class="card-footer bg-lightnatural">
+                    <div class="text-right">
+                      <button onclick="next('question-1','question-2','question1.1','question1.2','question1.3','question1.4');" type="button" id="btn-next-question-1" class="btn btn-orange ">Next Question</button>
+                    </div>
 
-                  <!--       <div class="text-left">
-                  <button onclick="back('question-1','question-2');" type="button" id="btn-prev-question-1" class="btn btn-orange ">Prev. Question</button>
-        -->
+                    <!--       <div class="text-left">
+                    <button onclick="back('question-1','question-2');" type="button" id="btn-prev-question-1" class="btn btn-orange ">Prev. Question</button>
+          -->
+                  </div>
                 </div>
+
               </div>
               <div class="col-lg-2 col-md-1 col-sm-0"></div>
             </div>
@@ -199,25 +209,22 @@
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="card-footer">
-                  <div class="row">
-                    <div class="col">
-                      <div class="text-left">
-                        <button onclick="back('question-2','question-1');" type="button" id="btn-prev-question-2" class="btn btn-orange ">Prev. Question</button>
+                  <div class="card-footer bg-lightnatural">
+                    <div class="row">
+                      <div class="col">
+                        <div class="text-left">
+                          <button onclick="back('question-2','question-1');" type="button" id="btn-prev-question-2" class="btn btn-orange ">Prev. Question</button>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="text-right">
+
+                          <button onclick="next('question-2','question-3','question2.1','question2.2','question2.3','question2.4')" type="button" id="btn-prev-question-2" class="btn btn-orange">Next Question</button>
+                        </div>
                       </div>
                     </div>
-                    <div class="col">
-                      <div class="text-right">
-
-                        <button onclick="next('question-2','question-3','question2.1','question2.2','question2.3','question2.4')" type="button" id="btn-prev-question-2" class="btn btn-orange">Next Question</button>
-                      </div>
-                    </div>
-
                   </div>
-
                 </div>
-
               </div>
               <div class="col-lg-2 col-md-1 col-sm-0"></div>
             </div>
@@ -281,23 +288,20 @@
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="card-footer">
-                  <div class="row">
-                    <div class="col">
-                      <div class="text-left">
-                        <button onclick="back('question-3','question-2');" type="button" id="btn-prev-question-3" class="btn btn-orange ">Prev. Question</button>
+                  <div class="card-footer bg-lightnatural">
+                    <div class="row">
+                      <div class="col">
+                        <div class="text-left">
+                          <button onclick="back('question-3','question-2');" type="button" id="btn-prev-question-3" class="btn btn-orange ">Prev. Question</button>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="text-right">
+                          <button onclick="next('question-3','question-4','question3.1','question3.2','question3.3','question3.4')" type="button" id="btn-prev-question-3" class="btn btn-orange ">Next Question</button>
+                        </div>
                       </div>
                     </div>
-                    <div class="col">
-                      <div class="text-right">
-
-                        <button onclick="next('question-3','question-4','question3.1','question3.2','question3.3','question3.4')" type="button" id="btn-prev-question-3" class="btn btn-orange ">Next Question</button>
-                      </div>
-                    </div>
-
                   </div>
-
                 </div>
               </div>
               <div class="col-lg-2 col-md-1 col-sm-0"></div>
@@ -365,23 +369,20 @@
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="card-footer">
-                  <div class="row">
-                    <div class="col">
-                      <div class="text-left">
-                        <button onclick="back('question-4','question-3');" type="button" id="btn-prev-question-4" class="btn btn-orange ">Prev. Question</button>
+                  <div class="card-footer bg-lightnatural">
+                    <div class="row">
+                      <div class="col">
+                        <div class="text-left">
+                          <button onclick="back('question-4','question-3');" type="button" id="btn-prev-question-4" class="btn btn-orange ">Prev. Question</button>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="text-right">
+                          <button onclick="next('question-4','question-5','question4.1','question4.2','question4.3','question4.4')" type="button" id="btn-prev-question-4" class="btn btn-orange ">Next Question</button>
+                        </div>
                       </div>
                     </div>
-                    <div class="col">
-                      <div class="text-right">
-
-                        <button onclick="next('question-4','question-5','question4.1','question4.2','question4.3','question4.4')" type="button" id="btn-prev-question-4" class="btn btn-orange ">Next Question</button>
-                      </div>
-                    </div>
-
                   </div>
-
                 </div>
               </div>
               <div class="col-lg-2 col-md-1 col-sm-0"></div>
@@ -443,23 +444,20 @@
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="card-footer">
-                  <div class="row">
-                    <div class="col">
-                      <div class="text-left">
-                        <button onclick="back('question-5','question-4');" type="button" id="btn-prev-question-5" class="btn btn-orange ">Prev. Question</button>
+                  <div class="card-footer bg-lightnatural">
+                    <div class="row">
+                      <div class="col">
+                        <div class="text-left">
+                          <button onclick="back('question-5','question-4');" type="button" id="btn-prev-question-5" class="btn btn-orange ">Prev. Question</button>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="text-right">
+                          <button onclick="next('question-5','question-6','question5.1','question5.2','question5.3','question5.4')" type="button" id="btn-prev-question-5" class="btn btn-orange ">Next Question</button>
+                        </div>
                       </div>
                     </div>
-                    <div class="col">
-                      <div class="text-right">
-
-                        <button onclick="next('question-5','question-6','question5.1','question5.2','question5.3','question5.4')" type="button" id="btn-prev-question-5" class="btn btn-orange ">Next Question</button>
-                      </div>
-                    </div>
-
                   </div>
-
                 </div>
               </div>
               <div class="col-lg-2 col-md-1 col-sm-0"></div>
@@ -521,23 +519,20 @@
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="card-footer">
-                  <div class="row">
-                    <div class="col">
-                      <div class="text-left">
-                        <button onclick="back('question-6','question-5');" type="button" id="btn-prev-question-6" class="btn btn-orange ">Prev. Question</button>
+                  <div class="card-footer bg-lightnatural">
+                    <div class="row">
+                      <div class="col">
+                        <div class="text-left">
+                          <button onclick="back('question-6','question-5');" type="button" id="btn-prev-question-6" class="btn btn-orange ">Prev. Question</button>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="text-right">
+                          <button onclick="result(); computeForm(this.form); next('question-6','Result','question6.1','question6.2','question6.3','question6.4')" id="button-answer" type="button" class="btn btn-orange ">Get Result</button>
+                        </div>
                       </div>
                     </div>
-                    <div class="col">
-                      <div class="text-right">
-
-                        <button onclick="result(); computeForm(this.form); next('question-6','Result','question6.1','question6.2','question6.3','question6.4')" id="button-answer" type="button" class="btn btn-orange ">Get Result</button>
-                      </div>
-                    </div>
-
                   </div>
-
                 </div>
               </div>
               <div class="col-lg-2 col-md-1 col-sm-0"></div>
@@ -698,7 +693,7 @@
                 </div>
               </div>
             </div>
-            <div class="card-footer">
+            <div class="card-footer bg-lightnatural">
             </div>
           </div>
           <div class="col-lg-2 col-md-1 col-sm-0"></div>
