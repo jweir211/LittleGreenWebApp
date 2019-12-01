@@ -18,12 +18,12 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbar-expand" style="background-color: #3e8914;">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbar-expand hide-on-mobile" style="background-color: #3e8914;">
       <img src="leaf.png" height="50px" alt="leaf img">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="collapse navbar-collapse flex-right" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link" href="#"> <span class="sr-only">(current)</span></a>
@@ -49,6 +49,38 @@
         </ul>
       </div>
     </nav>
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark hide-on-desktop" style="background-color: #3e8914;">
+      <a class="navbar-brand" href="#"><img src="leaf.png" height="40px" alt="leaf img"></a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="Home-Page.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Quiz.html">Quiz</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="MapPage.html">Map</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Recipes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Links</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">All-References</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
   </header>
   <div class="page-content">
     <main>
@@ -79,7 +111,7 @@
 
 
         <form METHOD=POST>
-          <article class="" id="question-1">
+          <article class="container-fluid" id="question-1">
 
             <div class="row">
               <div class="col-lg-2 col-md-1 col-sm-0"></div>
@@ -156,7 +188,7 @@
 
 
 
-          <article class="hidden" id="question-2">
+          <article class="container-fluid hidden" id="question-2">
             <div class="row ">
               <div class="col-lg-2 col-md-1 col-sm-0"></div>
               <div class="col-lg-8 col-md-10 col-sm">
@@ -234,7 +266,7 @@
 
 
 
-          <article class="hidden" id="question-3">
+          <article class="container-fluid hidden" id="question-3">
 
             <div class="row">
               <div class="col-lg-2 col-md-1 col-sm-0"></div>
@@ -313,7 +345,7 @@
 
 
 
-          <article class="hidden" id="question-4">
+          <article class="container-fluid hidden" id="question-4">
 
             <div class="row">
               <div class="col-lg-2 col-md-1 col-sm-0"></div>
@@ -390,7 +422,7 @@
           </article>
 
 
-          <article class="hidden" id="question-5">
+          <article class="container-fluid hidden" id="question-5">
 
             <div class="row">
               <div class="col-lg-2 col-md-1 col-sm-0"></div>
@@ -465,7 +497,7 @@
           </article>
 
 
-          <article class="hidden" id="question-6">
+          <article class="container-fluid hidden" id="question-6">
 
             <div class="row">
               <div class="col-lg-2 col-md-1 col-sm-0"></div>
@@ -540,7 +572,7 @@
           </article>
         </form>
 
-        <article class="Result hidden" id="Result">
+        <article class="container-fluidResult  hidden" id="Result">
 
           <div class="row">
             <div class="col-lg-2 col-md-1 col-sm-0"></div>
@@ -554,133 +586,133 @@
 
 
 
-                    <div class="choiceResult hidden" id="overall1">
+                    <div class="choiceResult  hidden" id="overall1">
                       <h3>You couldn't be better</h3>
                       <p>You are the best of us, if only everyone could be so dedicated as you the earth would be a better place. You are like an eco-friendly angel sent to teach us how to live best for the enviroment. Remember that even though you
                         do this for the enviroment you should also take care of yourself, so you can be happy in the happy world you're creating.</p>
                     </div>
 
-                    <div class="choiceResult hidden" id="overall2">
+                    <div class="choiceResult  hidden" id="overall2">
                       <h3>Among the best</h3>
                       <p>You are one of the people who can show other how it is done, though you have some things you could do better it is not a lot. If you want you can teach people around how to do better, just remember not to be forcefull or they
                         will go in the opposite direction. Help them see that this is a better way of living. And remember NEVER tell people that what they're doing is wrong, but rather show them a better way.</p>
                     </div>
 
-                    <div class="choiceResult hidden" id="overall3">
+                    <div class="choiceResult  hidden" id="overall3">
                       <h3>Still trying</h3>
                       <p>You're still trying to get everything to work in your daily life, though you are very concious about living eco-friendly there is still some things to do.</p>
                     </div>
 
-                    <div class="choiceResult hidden" id="overall4">
+                    <div class="choiceResult  hidden" id="overall4">
                       <h3>Baby steps</h3>
                       <p>You're just starting out as living as an eco-friendly person, maybe you don't know what can be done to futher it or maybe it looks to be too much work. Trust me, though it looks bleak at the beginning the better at living
                         eco-friendly the easier it gets.</p>
                     </div>
 
-                    <div class="choiceResult hidden" id="overall5">
+                    <div class="choiceResult  hidden" id="overall5">
                       <h3>First time here?</h3>
                       <p>Either you haven't heard about how to live enviromental friendly or you just got told. Either way, this is your path to a better world. learn how to optimise how you live to help save the earth. maybe you don't feel like you
                         do as much as a single person, but the more people living eco-friendly the more we can show our gorvernment and the big firms that this is how we want to live.</p>
                     </div>
 
-                    <div class="choiceResult hidden" id="overall6">
+                    <div class="choiceResult  hidden" id="overall6">
                       <h3>Are you sure you were honest?</h3>
                       <p>Either you answered the worst options on purpose, you live to go against eco-friendly living or you are very uninformed about this. Don't worry no matter what the reason is you can still learn to do a difference. Learn about
                         how to live eco-friendly and do the best you can. If everbody does that the earth will surely move in the right direction.</p>
                     </div>
 
-                    <div class="choiceResult hidden" id="Result1.1">
+                    <div class="choiceResult  hidden" id="Result1.1">
                       <p>It's great that you are vegetarian/vegan just make sure you get all your needed nutritions. It would also be good to see where the products you use come from because if you buy green beans from Kenya the amount of air travel
                         also have a big effect on the enviroment</p>
                     </div>
-                    <div class="choiceResult hidden" id="Result1.2">
+                    <div class="choiceResult  hidden" id="Result1.2">
                       <p>It's a great choice to have vegetarian days or just eaten meat only once in a while. The next step will be figuring out where all your products come from so you don't destroy the enviroment by importing too much</p>
                     </div>
-                    <div class="choiceResult hidden" id="Result1.3">
+                    <div class="choiceResult  hidden" id="Result1.3">
                       <p>Try and find a good vegetarian dish on the internet, you can choose if you want to use meat substituts in your dish or not, or maybe ask your vegetarian friend to show you a recipe or a good place to eat vegetarian</p>
                     </div>
-                    <div class="choiceResult hidden" id="Result1.4">
+                    <div class="choiceResult  hidden" id="Result1.4">
                       <p>You say that you can't live without meat, but how much vegetarian food have you eaten, now you probably shouldn't go from eaten meat everyday to full vegan, but try and eat some vegetarian dishes. and try some meat
                         substitutes if it is that important for you to get a meaty taste</p>
                     </div>
 
-                    <div class="choiceResult hidden" id="Result2.1">
+                    <div class="choiceResult  hidden" id="Result2.1">
                       <p>You sound like you live like a person in full contact with nature, it is great that you compost and is so sure to buy only what you need. We couldn't ask more from you.</p>
                     </div>
-                    <div class="choiceResult hidden" id="Result2.2">
+                    <div class="choiceResult  hidden" id="Result2.2">
                       <p>It is good to fight against food waste even the small things matter, the more concious you become about it being a problem the more you can help fight it </p>
                     </div>
-                    <div class="choiceResult hidden" id="Result2.3">
+                    <div class="choiceResult  hidden" id="Result2.3">
                       <p>Even if you don't think about food waste when you know it is a problem you can figure out a way of fighting it. figure out what you can do to be better and do the things that are easiest for you. Then maybe you can do more
                         and more over time</p>
                     </div>
-                    <div class="choiceResult hidden" id="Result2.4">
+                    <div class="choiceResult  hidden" id="Result2.4">
                       <p>A lot of food gets thrown out each year, we waste money making the food, its bad for the enviroment that there is more food than we can consume. There are many ways to fight it, try and look it up, maybe you'll learn
                         something new.</p>
                     </div>
 
-                    <div class="choiceResult hidden" id="Result3.1">
+                    <div class="choiceResult  hidden" id="Result3.1">
                       <p>It is fantastic that you recycle, that is making the world a better place and makes us use less new ressouces by using what we've already used once.</p>
                     </div>
-                    <div class="choiceResult hidden" id="Result3.2">
+                    <div class="choiceResult  hidden" id="Result3.2">
                       <p>It's great that you recycle that much, the easier things are to recycle when you buy them the easier it is for you remember that. if you also begin to get your meat, bread and vegetables in your own containers, makes it
                         easier for you and the enviroment </p>
                     </div>
-                    <div class="choiceResult hidden" id="Result3.3">
+                    <div class="choiceResult  hidden" id="Result3.3">
                       <p>Even the small things matter when it comes to recycling, try to make different bins at home for the different stuff, you can also begin to buy things that are easier to recycle</p>
                     </div>
-                    <div class="choiceResult hidden" id="Result3.4">
+                    <div class="choiceResult  hidden" id="Result3.4">
                       <p>You can make it easy for yourself by thingking about recycling whenyou buy you things and choose what you buy depending on how easy it is for yourself. You can also make recycle bins at home for things like metal, plastic,
                         glass and cardboard</p>
                     </div>
 
-                    <div class="choiceResult hidden" id="Result4.1">
+                    <div class="choiceResult  hidden" id="Result4.1">
                       <p>Wonderfull job with cutting down on plastic, the less we use the less gets produced the less of a problem it is</p>
                     </div>
-                    <div class="choiceResult hidden" id="Result4.2">
+                    <div class="choiceResult  hidden" id="Result4.2">
                       <p>It is the small things that matters, the less plastic you buy and the more concious you are about what you buy the more you show the producers of the plastic that you don't want it, and that they have to find alternatives.
                       </p>
                     </div>
-                    <div class="choiceResult hidden" id="Result4.3">
+                    <div class="choiceResult  hidden" id="Result4.3">
                       <p>Maybe you don't feel like it is convenient for you to cut down on plastic, and we understand that we live in an age where it is difficult to completely get independent of plastic. What you can do is start out small, with
                         taking your own bags when doing grocerie shopping, and taking your own containers for meat, bread and vegetables, and suddendly you see that it is not only cheaper but it also feels better to do.</p>
                     </div>
-                    <div class="choiceResult hidden" id="Result4.4">
+                    <div class="choiceResult  hidden" id="Result4.4">
                       <p>Maybe you don't care but plastic is one of the bigger problems we have, maybe you think it is too difficult to begin, and yes it does seem like a lot of work. Nect time you're going shopping try to take your own bag from home
                         to do the shopping in, it may seem like it wouldn't do much, but even the small things matter, you can slowly go towards living without plastic with baby steps, and that is completely alright.</p>
                     </div>
 
-                    <div class="choiceResult hidden" id="Result5.1">
+                    <div class="choiceResult  hidden" id="Result5.1">
                       <p>It is great that you bike/walk/run to work, not only is it great for the enviroment but it is also great for both your mind and your body, and remember the further you bike each morning the better for yourself. of course you
                         shouldn't exhaust yourself either.</p>
                     </div>
-                    <div class="choiceResult hidden" id="Result5.2">
+                    <div class="choiceResult  hidden" id="Result5.2">
                       <p>Commuting is a great way to get to work, not only do you use the public transport but you also get into an enviroment where you can meet a lot of interesting people. Try next time you commute to start a conversation or two,
                         you can make people happy just by talking to them. Remember to also stop when it seems like the person doesn't want to talk with you, it can also ruin a persons day if you try too hard. </p>
                     </div>
-                    <div class="choiceResult hidden" id="Result5.3">
+                    <div class="choiceResult  hidden" id="Result5.3">
                       <p>It is great to share a car with colleagues, not only can you switch driver so you don't have to drive each morning, but you can also get closer and get to know some of the colleagues taht you perhaps don't talk with as often.
                       </p>
                     </div>
-                    <div class="choiceResult hidden" id="Result5.4">
+                    <div class="choiceResult  hidden" id="Result5.4">
                       <p>Sometimes driving to work is neccesary sadly, though there are many alternatives that we recomend over driving by yourself, it can also be the only way to work that doesn't take too long and/or you have some other reasons to
                         take the car. Just when you can try and look for alternatives it can be good for you as well as others</p>
                     </div>
 
 
-                    <div class="choiceResult hidden" id="Result6.1">
+                    <div class="choiceResult  hidden" id="Result6.1">
                       <p>It is great to by locally in many ways, you support local businesses, you help your country, you don't send money out of the country, you have a chance of seeing how the goods gets made and how people who make it are treated
                         and of course you don't use planes to ship from china or australia. You my friend is a great person for everyone around you.</p>
                     </div>
-                    <div class="choiceResult hidden" id="Result6.2">
+                    <div class="choiceResult  hidden" id="Result6.2">
                       <p>We all understand when you need speciality goods, maybe you wanna treat yourself, or maybe you have a party planned where you need these things or maybe you wanna give someone an exstra special gift. Whatever it is, we don't
                         judge. Though next time you buy something, do think an extra time if it really is that neccesary for you.</p>
                     </div>
-                    <div class="choiceResult hidden" id="Result6.3">
+                    <div class="choiceResult  hidden" id="Result6.3">
                       <p>Local meat is meat you can trust have lived to the standard you set for it, though you can say the same about vegetables. Ask youself how important those things from Thailand or japan is, and maybe treat youself and people
                         around you by spending a few exstra bucks on something that have been made around the corner instead</p>
                     </div>
-                    <div class="choiceResult hidden" id="Result6.4">
+                    <div class="choiceResult  hidden" id="Result6.4">
                       <p>Maybe you don't focus on where what you buy is from, but sometimes there are many good reasons to do. Reasons like you support local businesses, you help your country, you don't send money out of the country, you have a
                         chance of seeing how the goods gets made and how people who make it are treated and of course you don't use planes to ship from china or australia. These are all good reasons to buy locally take your pick and feel good about
                         yourself</p>
@@ -970,7 +1002,7 @@
 
   </main>
   </div>
-  <footer>
+  <footer class="container-fluid">
     <div class="row">
       <div class="col f">
         <!footer references>
