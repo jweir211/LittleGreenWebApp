@@ -10,12 +10,12 @@ that can be bought from the little green larder.
 
 Distribution of Tasks*
 
-Jack: CSS, Speaking to the Little Green Larder to get recipe's etc, Homepage, Write Product Pitch (with help), help with nav links
+Jack: CSS, Speaking to the Little Green Larder to get recipe's etc, Homepage, Write Product Pitch, nav links, recipe-carousel
 
-John: Map, Nav Links (with help)
+John: Map, Nav Links
 
-Jennifer: Recipe Carousel, References
-
-Jonas: Quiz, Research for feedback for quiz
+Jonas: Quiz, Research for feedback for quiz nav links, product pitch slides (except for map, recipes and homepage)
 
 *These tasks are only provisional as of now. If more work comes up then will change
+
+msg from jack - could not seem to remove all-references from navbar in links.html despite removing lines and pushing. could be github pages playing up. no time left to fix.
