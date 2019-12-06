@@ -6,16 +6,17 @@ body {
   text-align: justify;
   position: absolute;
   top: 70px;
+  width: 100%;
 }
-
 /*adds margins for main content*/
 main {
   margin-left: 25px;
   margin-right:25px;
 }
 
-
-
+.ref{
+  color: #dd614a
+}
 /*creates a footer that remains at bottom of page*/
 footer {
   position: static;
@@ -34,4 +35,8 @@ footer {
   font-weight: bold;
   line-height: 50%;
 
+}
+
+.h {
+    list-style: circle;
 }

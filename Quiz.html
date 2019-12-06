@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-control" content="no-store">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="master.css">
+  <link rel="stylesheet" href="Quiz.css">
+  <link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre|Vidaloka&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <title>The Little Green Web App - Quiz</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbar-expand hide-on-mobile" style="background-color: #3e8914;">
+      <img src="leaf.png" height="50px" alt="leaf img">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse flex-right" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#"> <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Quiz.html">Quiz</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="MapPage.html">Map</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">EcoRecipes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">Links</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">All-References</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark hide-on-desktop" style="background-color: #3e8914;">
+      <a class="navbar-brand" href="#"><img src="leaf.png" height="40px" alt="leaf img"></a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="Home-Page.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Quiz.html">Quiz</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="MapPage.html">Map</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Recipes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Links</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">All-References</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+  </header>
+  <div class="page-content">
+    <main>
+      <div class="row">
+        <div class="col-lg-2 col-md-1 col-sm-0"></div>
+        <div class="col-lg-8 col-md-10 col-sm">
+          <h1> Quiz </h1>
+          <p> We all want to live life the way that is best for ourselves, but what if you could live a life that not only is great for you but also for everyone around you. This quiz will help you figure out where you are doing well and where you
+            could become better, for both yourself and the environment.</p>
+            <p>If you afte the quiz becomes interested in how you can live more eco-friendly check the links down at the buttom</p>
+        </div>
+        <div class="col-lg-2 col-md-1 col-sm-0"></div>
+      </div>
+
+
+      <section id="quiz">
+        <div class="row">
+          <div class="col-lg-2 col-md-1 col-sm-0"></div>
+          <div class="col-lg-8 col-md-10 col-sm">
+            <div class="text-center">
+              <h3>Eco-friendly quiz</h3>
+              <p>This quiz has 6 questions about 6 different topics in living eco-friendly, please answer them truthfully as the answer you get is individually designed to fit the exact way you answer this quiz. Remember no matter how you do, there
+                are ways to get better without sacrificing all your time or way of life. Just take small steps and remember there are a lot of people out there that are willing to help.</p>
+            </div>
+
+          </div>
+          <div class="col-lg-2 col-md-1 col-sm-0"></div>
+        </div>
+
+
+        <form METHOD=POST>
+          <article class="container-fluid" id="question-1">
+
+            <div class="row">
+              <div class="col-lg-2 col-md-1 col-sm-0"></div>
+              <div class="col-lg-8 col-md-10 col-sm">
+                <div class="card">
+                  <div class="card-header bg-green">
+                    <h3>Question 1</h3>
+                  </div>
+                  <div class="card-body bg-natural">
+                    <p>Do you eat vegetarian?</p>
+                    <div class="card-deck">
+                      <div class="card bg-lightgreen">
+                        <label class="form-check-label quiz-label">
+
+                          <div class="card-body text-center">
+                            <div class="form-check">
+                              <input autocomplete="off" type="radio" class="form-check-input" id="question1.1" name="question1" value="4">I only eat vegetarian/vegan
+                            </div>
+                          </div>
+                        </label>
+
+                      </div>
+                      <div class="card bg-lightgreen">
+                        <label class="form-check-label">
+                          <div class="card-body text-center">
+                            <div class="form-check">
+                              <input autocomplete="off" type="radio" class="form-check-input" id="question1.2" name="question1" value="3">I have vegetarian days in my week
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="card-deck">
+                      <div class="card bg-lightgreen">
+                        <label class="form-check-label">
+                          <div class="card-body text-center">
+                            <div class="form-check">
+                              <input autocomplete="off" type="radio" class="form-check-input" id="question1.3" name="question1" value="2">I have thought about trying it
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="card bg-lightgreen">
+                        <label class="form-check-label">
+                          <div class="card-body text-center">
+                            <div class="form-check">
+                              <input autocomplete="off" type="radio" class="form-check-input" id="question1.4" name="question1" value="1">I couldn’t live a day without meat
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer bg-lightnatural">
+                    <div class="text-right">
+                      <button onclick="next('question-1','question-2','question1.1','question1.2','question1.3','question1.4');" type="button" id="btn-next-question-1" class="btn btn-orange ">Next Question</button>
+                    </div>
+
+                    <!--       <div class="text-left">
+                    <button onclick="back('question-1','question-2');" type="button" id="btn-prev-question-1" class="btn btn-orange ">Prev. Question</button>
+          -->
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-lg-2 col-md-1 col-sm-0"></div>
+            </div>
+          </article>
+
+
+
+
+
+
+
+
+          <article class="container-fluid hidden" id="question-2">
+            <div class="row ">
+              <div class="col-lg-2 col-md-1 col-sm-0"></div>
+              <div class="col-lg-8 col-md-10 col-sm">
+                <div class="card">
+                  <div class="card-header bg-green">
+                    <h3>Question 2</h3>
+                  </div>
+                  <div class="card-body bg-natural">
+                    <p>Do you fight food waste?</p>
+                    <div class="card-deck">
+                      <div class="card bg-lightgreen">
+                        <label class="form-check-label quiz-label">
+
+                          <div class="card-body text-center">
+                            <div class="form-check">
+                              <input autocomplete="off" type="radio" class="form-check-input" id="question2.1" name="question2" value="4">I try everything I can to fight it, including composting, purchase only what I need, save for next day.
+                            </div>
+                          </div>
+                        </label>
+
+                      </div>
+                      <div class="card bg-lightgreen">
+                        <label class="form-check-label">
+                          <div class="card-body text-center">
+                            <div class="form-check">
+                              <input autocomplete="off" type="radio" class="form-check-input" id="question2.2" name="question2" value="3"> I do when I think about it but I don’t go out of my way for it.
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="card-deck">
+                      <div class="card bg-lightgreen">
+                        <label class="form-check-label">
+                          <div class="card-body text-center">
+                            <div class="form-check">
+                              <input autocomplete="off" type="radio" class="form-check-input" id="question2.3" name="question2" value="2">I don’t really think about it.
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="card bg-lightgreen">
+                        <label class="form-check-label">
+                          <div class="card-body text-center">
+                            <div class="form-check">
+                              <input autocomplete="off" type="radio" class="form-check-input" id="question2.4" name="question2" value="1">What is food waste.
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer bg-lightnatural">
+                    <div class="row">
+                      <div class="col">
+                        <div class="text-left">
+                          <button onclick="back('question-2','question-1');" type="button" id="btn-prev-question-2" class="btn btn-orange ">Prev. Question</button>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="text-right">
+
+                          <button onclick="next('question-2','question-3','question2.1','question2.2','question2.3','question2.4')" type="button" id="btn-prev-question-2" class="btn btn-orange">Next Question</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-1 col-sm-0"></div>
+            </div>
+          </article>
+
+
+
+
+
+          <article class="container-fluid hidden" id="question-3">
+
+            <div class="row">
+              <div class="col-lg-2 col-md-1 col-sm-0"></div>
+              <div class="col-lg-8 col-md-10 col-sm">
+                <div class="card">
+                  <div class="card-header bg-green">
+                    <h3>Question 3</h3>
+                  </div>
+                  <div class="card-body bg-natural">
+                    <p>Do you recycle?</p>
+                    <div class="card-deck">
+                      <div class="card bg-lightgreen">
+                        <label class="form-check-label quiz-label">
+
+                          <div class="card-body text-center">
+                            <div class="form-check">
+                              <input autocomplete="off" type="radio" class="form-check-input" id="question3.1" name="question3" value="4">I actively try to recycle everything I can, and try to focus on buying things that are recyclable.
+                            </div>
+                          </div>
+                        </label>
+
+                      </div>
+                      <div class="card bg-lightgreen">
+                        <label class="form-check-label">
+                          <div class="card-body text-center">
+                            <div class="form-check">
+                              <input autocomplete="off" type="radio" class="form-check-input" id="question3.2" name="question3" value="3">I recycle most things and only the easy stuff like glass plastic and metal.
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="card-deck">
+                      <div class="card bg-lightgreen">
+                        <label class="form-check-label">
+                          <div class="card-body text-center">
+                            <div class="form-check">
+                              <input autocomplete="off" type="radio" class="form-check-input" id="question3.3" name="question3" value="2">I only recycle when I get reminded by a recycle bin, nearby or by my peers.
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="card bg-lightgreen">
+                        <label class="form-check-label">
+                          <div class="card-body text-center">
+                            <div class="form-check">
+                              <input autocomplete="off" type="radio" class="form-check-input" id="question3.4" name="question3" value="1">I don’t really recycle maybe unless I get reminded and it is convenient
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer bg-lightnatural">
+                    <div class="row">
+                      <div class="col">
+                        <div class="text-left">
+                          <button onclick="back('question-3','question-2');" type="button" id="btn-prev-question-3" class="btn btn-orange ">Prev. Question</button>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="text-right">
+                          <button onclick="next('question-3','question-4','question3.1','question3.2','question3.3','question3.4')" type="button" id="btn-prev-question-3" class="btn btn-orange ">Next Question</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-1 col-sm-0"></div>
+            </div>
+          </article>
+
+
+
+
+
+
+          <article class="container-fluid hidden" id="question-4">
+
+            <div class="row">
+              <div class="col-lg-2 col-md-1 col-sm-0"></div>
+              <div class="col-lg-8 col-md-10 col-sm">
+                <div class="card">
+                  <div class="card-header bg-green">
+                    <h3>Question 4</h3>
+                  </div>
+                  <div class="card-body bg-natural">
+                    <p>Do you actively cut down on plastic?</p>
+                    <div class="card-deck">
+                      <div class="card bg-lightgreen">
+                        <label class="form-check-label quiz-label">
+
+                          <div class="card-body text-center">
+                            <div class="form-check">
+                              <input autocomplete="off" type="radio" class="form-check-input" id="question4.1" name="question4" value="4">I do everything I can to cut down on plastic, I bring Tupperware to the butcher and only buy loose vegetables,
+                              and
+                              bread.
+                            </div>
+                          </div>
+                        </label>
+
+                      </div>
+                      <div class="card bg-lightgreen">
+                        <label class="form-check-label">
+                          <div class="card-body text-center">
+                            <div class="form-check">
+                              <input autocomplete="off" type="radio" class="form-check-input" id="question4.2" name="question4" value="3">I try to have an open mind when I buy things and avoid plastic a bit, but not as much as I could.
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="card-deck">
+                      <div class="card bg-lightgreen">
+                        <label class="form-check-label">
+                          <div class="card-body text-center">
+                            <div class="form-check">
+                              <input autocomplete="off" type="radio" class="form-check-input" id="question4.3" name="question4" value="2">I think about doing it but it isn’t convenient enough for me to actively do it.
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="card bg-lightgreen">
+                        <label class="form-check-label">
+                          <div class="card-body text-center">
+                            <div class="form-check">
+                              <input autocomplete="off" type="radio" class="form-check-input" id="question4.4" name="question4" value="1">I don’t do anything actively and don’t really care.
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer bg-lightnatural">
+                    <div class="row">
+                      <div class="col">
+                        <div class="text-left">
+                          <button onclick="back('question-4','question-3');" type="button" id="btn-prev-question-4" class="btn btn-orange ">Prev. Question</button>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="text-right">
+                          <button onclick="next('question-4','question-5','question4.1','question4.2','question4.3','question4.4')" type="button" id="btn-prev-question-4" class="btn btn-orange ">Next Question</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-1 col-sm-0"></div>
+            </div>
+          </article>
+
+
+          <article class="container-fluid hidden" id="question-5">
+
+            <div class="row">
+              <div class="col-lg-2 col-md-1 col-sm-0"></div>
+              <div class="col-lg-8 col-md-10 col-sm">
+                <div class="card">
+                  <div class="card-header bg-green">
+                    <h3>Question 5</h3>
+                  </div>
+                  <div class="card-body bg-natural">
+                    <p>How do you get to work?</p>
+                    <div class="card-deck">
+                      <div class="card bg-lightgreen">
+                        <label class="form-check-label quiz-label">
+
+                          <div class="card-body text-center">
+                            <div class="form-check">
+                              <input autocomplete="off" type="radio" class="form-check-input" id="question5.1" name="question5" value="4"> I bike/walk/run to work
+                            </div>
+                          </div>
+                        </label>
+
+                      </div>
+                      <div class="card bg-lightgreen">
+                        <label class="form-check-label">
+                          <div class="card-body text-center">
+                            <div class="form-check">
+                              <input autocomplete="off" type="radio" class="form-check-input" id="question5.2" name="question5" value="3">I commute using public transport
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="card-deck">
+                      <div class="card bg-lightgreen">
+                        <label class="form-check-label">
+                          <div class="card-body text-center">
+                            <div class="form-check">
+                              <input autocomplete="off" type="radio" class="form-check-input" id="question5.3" name="question5" value="2">I drive together with multiple colleagues in one car
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="card bg-lightgreen">
+                        <label class="form-check-label">
+                          <div class="card-body text-center">
+                            <div class="form-check">
+                              <input autocomplete="off" type="radio" class="form-check-input" id="question5.4" name="question5" value="1">I drive alone to work
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer bg-lightnatural">
+                    <div class="row">
+                      <div class="col">
+                        <div class="text-left">
+                          <button onclick="back('question-5','question-4');" type="button" id="btn-prev-question-5" class="btn btn-orange ">Prev. Question</button>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="text-right">
+                          <button onclick="next('question-5','question-6','question5.1','question5.2','question5.3','question5.4')" type="button" id="btn-prev-question-5" class="btn btn-orange ">Next Question</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-1 col-sm-0"></div>
+            </div>
+          </article>
+
+
+          <article class="container-fluid hidden" id="question-6">
+
+            <div class="row">
+              <div class="col-lg-2 col-md-1 col-sm-0"></div>
+              <div class="col-lg-8 col-md-10 col-sm">
+                <div class="card">
+                  <div class="card-header bg-green">
+                    <h3>Question 6</h3>
+                  </div>
+                  <div class="card-body bg-natural">
+                    <p>Do you actively buy locally?</p>
+                    <div class="card-deck">
+                      <div class="card bg-lightgreen">
+                        <label class="form-check-label quiz-label">
+
+                          <div class="card-body text-center">
+                            <div class="form-check">
+                              <input autocomplete="off" type="radio" class="form-check-input" id="question6.1" name="question6" value="4"> I only buy locally.
+                            </div>
+                          </div>
+                        </label>
+
+                      </div>
+                      <div class="card bg-lightgreen">
+                        <label class="form-check-label">
+                          <div class="card-body text-center">
+                            <div class="form-check">
+                              <input autocomplete="off" type="radio" class="form-check-input" id="question6.2" name="question6" value="3">I mainly buy locally but buy speciality goods from import.
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="card-deck">
+                      <div class="card bg-lightgreen">
+                        <label class="form-check-label">
+                          <div class="card-body text-center">
+                            <div class="form-check">
+                              <input autocomplete="off" type="radio" class="form-check-input" id="question6.3" name="question6" value="2">I mainly buy meat locally and only other things if I think about it
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="card bg-lightgreen">
+                        <label class="form-check-label">
+                          <div class="card-body text-center">
+                            <div class="form-check">
+                              <input autocomplete="off" type="radio" class="form-check-input" id="question6.4" name="question6" value="1"> I don’t focus on where the things I buy come from
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer bg-lightnatural">
+                    <div class="row">
+                      <div class="col">
+                        <div class="text-left">
+                          <button onclick="back('question-6','question-5');" type="button" id="btn-prev-question-6" class="btn btn-orange ">Prev. Question</button>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="text-right">
+                          <button onclick="result(); computeForm(this.form); next('question-6','Result','question6.1','question6.2','question6.3','question6.4')" id="button-answer" type="button" class="btn btn-orange ">Get Result</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-1 col-sm-0"></div>
+            </div>
+          </article>
+        </form>
+
+        <article class="container-fluidResult  hidden" id="Result">
+
+          <div class="row">
+            <div class="col-lg-2 col-md-1 col-sm-0"></div>
+            <div class="col-lg-8 col-md-10 col-sm">
+              <div class="card">
+                <div class="card-header bg-green">
+                  <h3>Result</h3>
+                </div>
+                <div class="card-body bg-natural">
+                  <div class="card-deck">
+
+
+
+                    <div class="choiceResult  hidden" id="overall1">
+                      <h3>You couldn't be better</h3>
+                      <p>You are the best of us, if only everyone could be so dedicated as you the earth would be a better place. You are like an eco-friendly angel sent to teach us how to live best for the enviroment. Remember that even though you
+                        do this for the enviroment you should also take care of yourself, so you can be happy in the happy world you're creating.</p>
+                    </div>
+
+                    <div class="choiceResult  hidden" id="overall2">
+                      <h3>Among the best</h3>
+                      <p>You are one of the people who can show other how it is done, though you have some things you could do better it is not a lot. If you want you can teach people around how to do better, just remember not to be forcefull or they
+                        will go in the opposite direction. Help them see that this is a better way of living. And remember NEVER tell people that what they're doing is wrong, but rather show them a better way.</p>
+                    </div>
+
+                    <div class="choiceResult  hidden" id="overall3">
+                      <h3>Still trying</h3>
+                      <p>You're still trying to get everything to work in your daily life, though you are very concious about living eco-friendly there is still some things to do.</p>
+                    </div>
+
+                    <div class="choiceResult  hidden" id="overall4">
+                      <h3>Baby steps</h3>
+                      <p>You're just starting out as living as an eco-friendly person, maybe you don't know what can be done to futher it or maybe it looks to be too much work. Trust me, though it looks bleak at the beginning the better at living
+                        eco-friendly the easier it gets.</p>
+                    </div>
+
+                    <div class="choiceResult  hidden" id="overall5">
+                      <h3>First time here?</h3>
+                      <p>Either you haven't heard about how to live enviromental friendly or you just got told. Either way, this is your path to a better world. learn how to optimise how you live to help save the earth. maybe you don't feel like you
+                        do as much as a single person, but the more people living eco-friendly the more we can show our gorvernment and the big firms that this is how we want to live.</p>
+                    </div>
+
+                    <div class="choiceResult  hidden" id="overall6">
+                      <h3>Are you sure you were honest?</h3>
+                      <p>Either you answered the worst options on purpose, you live to go against eco-friendly living or you are very uninformed about this. Don't worry no matter what the reason is you can still learn to do a difference. Learn about
+                        how to live eco-friendly and do the best you can. If everbody does that the earth will surely move in the right direction.</p>
+                    </div>
+
+                    <div class="choiceResult  hidden" id="Result1.1">
+                      <p>It's great that you are vegetarian/vegan just make sure you get all your needed nutritions. It would also be good to see where the products you use come from because if you buy green beans from Kenya the amount of air travel
+                        also have a big effect on the enviroment</p>
+                    </div>
+                    <div class="choiceResult  hidden" id="Result1.2">
+                      <p>It's a great choice to have vegetarian days or just eaten meat only once in a while. The next step will be figuring out where all your products come from so you don't destroy the enviroment by importing too much</p>
+                    </div>
+                    <div class="choiceResult  hidden" id="Result1.3">
+                      <p>Try and find a good vegetarian dish on the internet, you can choose if you want to use meat substituts in your dish or not, or maybe ask your vegetarian friend to show you a recipe or a good place to eat vegetarian</p>
+                    </div>
+                    <div class="choiceResult  hidden" id="Result1.4">
+                      <p>You say that you can't live without meat, but how much vegetarian food have you eaten, now you probably shouldn't go from eaten meat everyday to full vegan, but try and eat some vegetarian dishes. and try some meat
+                        substitutes if it is that important for you to get a meaty taste</p>
+                    </div>
+
+                    <div class="choiceResult  hidden" id="Result2.1">
+                      <p>You sound like you live like a person in full contact with nature, it is great that you compost and is so sure to buy only what you need. We couldn't ask more from you.</p>
+                    </div>
+                    <div class="choiceResult  hidden" id="Result2.2">
+                      <p>It is good to fight against food waste even the small things matter, the more concious you become about it being a problem the more you can help fight it </p>
+                    </div>
+                    <div class="choiceResult  hidden" id="Result2.3">
+                      <p>Even if you don't think about food waste when you know it is a problem you can figure out a way of fighting it. figure out what you can do to be better and do the things that are easiest for you. Then maybe you can do more
+                        and more over time</p>
+                    </div>
+                    <div class="choiceResult  hidden" id="Result2.4">
+                      <p>A lot of food gets thrown out each year, we waste money making the food, its bad for the enviroment that there is more food than we can consume. There are many ways to fight it, try and look it up, maybe you'll learn
+                        something new.</p>
+                    </div>
+
+                    <div class="choiceResult  hidden" id="Result3.1">
+                      <p>It is fantastic that you recycle, that is making the world a better place and makes us use less new ressouces by using what we've already used once.</p>
+                    </div>
+                    <div class="choiceResult  hidden" id="Result3.2">
+                      <p>It's great that you recycle that much, the easier things are to recycle when you buy them the easier it is for you remember that. if you also begin to get your meat, bread and vegetables in your own containers, makes it
+                        easier for you and the enviroment </p>
+                    </div>
+                    <div class="choiceResult  hidden" id="Result3.3">
+                      <p>Even the small things matter when it comes to recycling, try to make different bins at home for the different stuff, you can also begin to buy things that are easier to recycle</p>
+                    </div>
+                    <div class="choiceResult  hidden" id="Result3.4">
+                      <p>You can make it easy for yourself by thingking about recycling whenyou buy you things and choose what you buy depending on how easy it is for yourself. You can also make recycle bins at home for things like metal, plastic,
+                        glass and cardboard</p>
+                    </div>
+
+                    <div class="choiceResult  hidden" id="Result4.1">
+                      <p>Wonderfull job with cutting down on plastic, the less we use the less gets produced the less of a problem it is</p>
+                    </div>
+                    <div class="choiceResult  hidden" id="Result4.2">
+                      <p>It is the small things that matters, the less plastic you buy and the more concious you are about what you buy the more you show the producers of the plastic that you don't want it, and that they have to find alternatives.
+                      </p>
+                    </div>
+                    <div class="choiceResult  hidden" id="Result4.3">
+                      <p>Maybe you don't feel like it is convenient for you to cut down on plastic, and we understand that we live in an age where it is difficult to completely get independent of plastic. What you can do is start out small, with
+                        taking your own bags when doing grocerie shopping, and taking your own containers for meat, bread and vegetables, and suddendly you see that it is not only cheaper but it also feels better to do.</p>
+                    </div>
+                    <div class="choiceResult  hidden" id="Result4.4">
+                      <p>Maybe you don't care but plastic is one of the bigger problems we have, maybe you think it is too difficult to begin, and yes it does seem like a lot of work. Nect time you're going shopping try to take your own bag from home
+                        to do the shopping in, it may seem like it wouldn't do much, but even the small things matter, you can slowly go towards living without plastic with baby steps, and that is completely alright.</p>
+                    </div>
+
+                    <div class="choiceResult  hidden" id="Result5.1">
+                      <p>It is great that you bike/walk/run to work, not only is it great for the enviroment but it is also great for both your mind and your body, and remember the further you bike each morning the better for yourself. of course you
+                        shouldn't exhaust yourself either.</p>
+                    </div>
+                    <div class="choiceResult  hidden" id="Result5.2">
+                      <p>Commuting is a great way to get to work, not only do you use the public transport but you also get into an enviroment where you can meet a lot of interesting people. Try next time you commute to start a conversation or two,
+                        you can make people happy just by talking to them. Remember to also stop when it seems like the person doesn't want to talk with you, it can also ruin a persons day if you try too hard. </p>
+                    </div>
+                    <div class="choiceResult  hidden" id="Result5.3">
+                      <p>It is great to share a car with colleagues, not only can you switch driver so you don't have to drive each morning, but you can also get closer and get to know some of the colleagues taht you perhaps don't talk with as often.
+                      </p>
+                    </div>
+                    <div class="choiceResult  hidden" id="Result5.4">
+                      <p>Sometimes driving to work is neccesary sadly, though there are many alternatives that we recomend over driving by yourself, it can also be the only way to work that doesn't take too long and/or you have some other reasons to
+                        take the car. Just when you can try and look for alternatives it can be good for you as well as others</p>
+                    </div>
+
+
+                    <div class="choiceResult  hidden" id="Result6.1">
+                      <p>It is great to by locally in many ways, you support local businesses, you help your country, you don't send money out of the country, you have a chance of seeing how the goods gets made and how people who make it are treated
+                        and of course you don't use planes to ship from china or australia. You my friend is a great person for everyone around you.</p>
+                    </div>
+                    <div class="choiceResult  hidden" id="Result6.2">
+                      <p>We all understand when you need speciality goods, maybe you wanna treat yourself, or maybe you have a party planned where you need these things or maybe you wanna give someone an exstra special gift. Whatever it is, we don't
+                        judge. Though next time you buy something, do think an extra time if it really is that neccesary for you.</p>
+                    </div>
+                    <div class="choiceResult  hidden" id="Result6.3">
+                      <p>Local meat is meat you can trust have lived to the standard you set for it, though you can say the same about vegetables. Ask youself how important those things from Thailand or japan is, and maybe treat youself and people
+                        around you by spending a few exstra bucks on something that have been made around the corner instead</p>
+                    </div>
+                    <div class="choiceResult  hidden" id="Result6.4">
+                      <p>Maybe you don't focus on where what you buy is from, but sometimes there are many good reasons to do. Reasons like you support local businesses, you help your country, you don't send money out of the country, you have a
+                        chance of seeing how the goods gets made and how people who make it are treated and of course you don't use planes to ship from china or australia. These are all good reasons to buy locally take your pick and feel good about
+                        yourself</p>
+                    </div>
+
+
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer bg-lightnatural">
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-1 col-sm-0"></div>
+  </div>
+  </article>
+
+  </section>
+
+
+
+  <script type="text/javascript">
+    var isSelected = function(question1, question2, question3, question4) {
+
+      if (document.getElementById(question1).checked || document.getElementById(question2).checked || document.getElementById(question3).checked || document.getElementById(question4).checked) {
+        if (document.getElementById(question1).checked) {
+          console.log("nr 1");
+          return true;
+
+        } else if (document.getElementById(question2).checked) {
+          console.log("nr 2");
+          return true;
+
+        } else if (document.getElementById(question3).checked) {
+          console.log("nr 3");
+          return true;
+
+        } else if (document.getElementById(question4).checked) {
+          console.log("nr 4");
+          return true;
+
+        } else {
+          return false;
+
+        }
+      }
+      return false;
+    };
+
+
+    function result() {
+
+      if (document.getElementById("question1.1").checked) {
+        document.getElementById("Result1.1").style.display = "block";
+        document.getElementById("Result1.2").style.display = "none";
+        document.getElementById("Result1.3").style.display = "none";
+        document.getElementById("Result1.4").style.display = "none";
+      } else if (document.getElementById("question1.2").checked) {
+        document.getElementById("Result1.2").style.display = "block";
+        document.getElementById("Result1.1").style.display = "none";
+        document.getElementById("Result1.3").style.display = "none";
+        document.getElementById("Result1.4").style.display = "none";
+      } else if (document.getElementById("question1.3").checked) {
+        document.getElementById("Result1.3").style.display = "block";
+        document.getElementById("Result1.1").style.display = "none";
+        document.getElementById("Result1.2").style.display = "none";
+        document.getElementById("Result1.4").style.display = "none";
+      } else if (document.getElementById("question1.4").checked) {
+        document.getElementById("Result1.4").style.display = "block";
+        document.getElementById("Result1.1").style.display = "none";
+        document.getElementById("Result1.2").style.display = "none";
+        document.getElementById("Result1.3").style.display = "none";
+      }
+
+
+
+      if (document.getElementById("question2.1").checked) {
+        document.getElementById("Result2.1").style.display = "block";
+        document.getElementById("Result2.2").style.display = "none";
+        document.getElementById("Result2.3").style.display = "none";
+        document.getElementById("Result2.4").style.display = "none";
+      } else if (document.getElementById("question2.2").checked) {
+        document.getElementById("Result2.2").style.display = "block";
+        document.getElementById("Result2.1").style.display = "none";
+        document.getElementById("Result2.3").style.display = "none";
+        document.getElementById("Result2.4").style.display = "none";
+      } else if (document.getElementById("question2.3").checked) {
+        document.getElementById("Result2.3").style.display = "block";
+        document.getElementById("Result2.1").style.display = "none";
+        document.getElementById("Result2.2").style.display = "none";
+        document.getElementById("Result2.4").style.display = "none";
+      } else if (document.getElementById("question2.4").checked) {
+        document.getElementById("Result2.4").style.display = "block";
+        document.getElementById("Result2.1").style.display = "none";
+        document.getElementById("Result2.2").style.display = "none";
+        document.getElementById("Result2.3").style.display = "none";
+      }
+
+
+
+      if (document.getElementById("question3.1").checked) {
+        document.getElementById("Result3.1").style.display = "block";
+        document.getElementById("Result3.2").style.display = "none";
+        document.getElementById("Result3.3").style.display = "none";
+        document.getElementById("Result3.4").style.display = "none";
+      } else if (document.getElementById("question3.2").checked) {
+        document.getElementById("Result3.2").style.display = "block";
+        document.getElementById("Result3.1").style.display = "none";
+        document.getElementById("Result3.3").style.display = "none";
+        document.getElementById("Result3.4").style.display = "none";
+      } else if (document.getElementById("question3.3").checked) {
+        document.getElementById("Result3.3").style.display = "block";
+        document.getElementById("Result3.1").style.display = "none";
+        document.getElementById("Result3.2").style.display = "none";
+        document.getElementById("Result3.4").style.display = "none";
+      } else if (document.getElementById("question3.4").checked) {
+        document.getElementById("Result3.4").style.display = "block";
+        document.getElementById("Result3.1").style.display = "none";
+        document.getElementById("Result3.2").style.display = "none";
+        document.getElementById("Result3.3").style.display = "none";
+      }
+
+
+
+      if (document.getElementById("question4.1").checked) {
+        document.getElementById("Result4.1").style.display = "block";
+        document.getElementById("Result4.2").style.display = "none";
+        document.getElementById("Result4.3").style.display = "none";
+        document.getElementById("Result4.4").style.display = "none";
+      } else if (document.getElementById("question4.2").checked) {
+        document.getElementById("Result4.2").style.display = "block";
+        document.getElementById("Result4.1").style.display = "none";
+        document.getElementById("Result4.3").style.display = "none";
+        document.getElementById("Result4.4").style.display = "none";
+      } else if (document.getElementById("question4.3").checked) {
+        document.getElementById("Result4.3").style.display = "block";
+        document.getElementById("Result4.1").style.display = "none";
+        document.getElementById("Result4.2").style.display = "none";
+        document.getElementById("Result4.4").style.display = "none";
+      } else if (document.getElementById("question4.4").checked) {
+        document.getElementById("Result4.4").style.display = "block";
+        document.getElementById("Result4.1").style.display = "none";
+        document.getElementById("Result4.2").style.display = "none";
+        document.getElementById("Result4.3").style.display = "none";
+      }
+
+
+
+      if (document.getElementById("question5.1").checked) {
+        document.getElementById("Result5.1").style.display = "block";
+        document.getElementById("Result5.2").style.display = "none";
+        document.getElementById("Result5.3").style.display = "none";
+        document.getElementById("Result5.4").style.display = "none";
+      } else if (document.getElementById("question5.2").checked) {
+        document.getElementById("Result5.2").style.display = "block";
+        document.getElementById("Result5.1").style.display = "none";
+        document.getElementById("Result5.3").style.display = "none";
+        document.getElementById("Result5.4").style.display = "none";
+      } else if (document.getElementById("question5.3").checked) {
+        document.getElementById("Result5.3").style.display = "block";
+        document.getElementById("Result5.1").style.display = "none";
+        document.getElementById("Result5.2").style.display = "none";
+        document.getElementById("Result5.4").style.display = "none";
+      } else if (document.getElementById("question5.4").checked) {
+        document.getElementById("Result5.4").style.display = "block";
+        document.getElementById("Result5.1").style.display = "none";
+        document.getElementById("Result5.2").style.display = "none";
+        document.getElementById("Result5.3").style.display = "none";
+      }
+
+
+
+      if (document.getElementById("question6.1").checked) {
+        document.getElementById("Result6.1").style.display = "block";
+        document.getElementById("Result6.2").style.display = "none";
+        document.getElementById("Result6.3").style.display = "none";
+        document.getElementById("Result6.4").style.display = "none";
+      } else if (document.getElementById("question6.2").checked) {
+        document.getElementById("Result6.2").style.display = "block";
+        document.getElementById("Result6.1").style.display = "none";
+        document.getElementById("Result6.3").style.display = "none";
+        document.getElementById("Result6.4").style.display = "none";
+      } else if (document.getElementById("question6.3").checked) {
+        document.getElementById("Result6.3").style.display = "block";
+        document.getElementById("Result6.1").style.display = "none";
+        document.getElementById("Result6.2").style.display = "none";
+        document.getElementById("Result6.4").style.display = "none";
+      } else if (document.getElementById("question6.4").checked) {
+        document.getElementById("Result6.4").style.display = "block";
+        document.getElementById("Result6.1").style.display = "none";
+        document.getElementById("Result6.2").style.display = "none";
+        document.getElementById("Result6.3").style.display = "none";
+      }
+
+
+
+
+
+
+
+
+
+    }
+
+    function computeForm(form) {
+      var total = 0
+
+      for (var count = 0; count < 4; count++) {
+        if (form.question1[count].checked) {
+          var total = total + parseInt(form.question1[count].value);
+        }
+        if (form.question1[count].checked) {
+          var total = total + parseInt(form.question2[count].value);
+        }
+        if (form.question1[count].checked) {
+          var total = total + parseInt(form.question3[count].value);
+        }
+        if (form.question1[count].checked) {
+          var total = total + parseInt(form.question4[count].value);
+        }
+        if (form.question1[count].checked) {
+          var total = total + parseInt(form.question5[count].value);
+        }
+        if (form.question1[count].checked) {
+          var total = total + parseInt(form.question6[count].value);
+        }
+
+
+      }
+
+
+
+      if (total > 24) {
+
+        document.getElementById("overall1").style.display = "block";
+
+      } else if (total > 20) {
+
+        document.getElementById("overall2").style.display = "block";
+
+      } else if (total > 15) {
+
+        document.getElementById("overall3").style.display = "block";
+
+      } else if (total > 10) {
+
+        document.getElementById("overall4").style.display = "block";
+
+      } else if (total > 6) {
+
+        document.getElementById("overall5").style.display = "block";
+
+      } else {
+
+        document.getElementById("overall6").style.display = "block";
+
+      }
+
+    }
+
+    function back(question, prev) {
+
+      document.getElementById(question).style.display = "none";
+      document.getElementById(prev).style.display = "block";
+
+    }
+
+
+
+    function next(question, next, radio1, radio2, radio3, radio4) {
+
+      if (isSelected(radio1, radio2, radio3, radio4)) {
+        document.getElementById(question).style.display = "none";
+        document.getElementById(next).style.display = "block";
+        console.log("is selected");
+      } else {
+        console.log("is not selected");
+        alert("Please select an answer");
+      }
+
+    }
+  </script>
+
+
+
+  </main>
+  </div>
+  <footer class="container-fluid">
+    <div class="row">
+      <div class="col-lg col-sm-12 f">
+        <!footer references>
+          <h6><b> References For Page Only </b></h6>
+          <p><a class="ref" href="https://www.goodenergy.co.uk/blog/2017/08/22/ultimate-guide-eco-friendly-living/">GoodEnergy - Ultimate guide eco friendly living </a></p>
+          <p> <a class="ref" href="https://greatist.com/happiness/eco-friendly-tips-save-cash#1">Greatist - Eco friendly tips save cash</a> </p>
+          <p> <a class="ref" href="https://www.bbc.co.uk/news/newsbeat-47990742"> BBC - How to be more eco-friendly in everyday life</a> </p>
+      </div>
+      <div class="col-lg col-sm-12 f">
+        <!title>
+          <h3> Little Green Web App </h3>
+      </div>
+      <div class="col-lg col-sm-12 f">
+        <!"contact and page author, no real contact details">
+          <h6><b>Report An Issue</b></h6>
+          <p>@Page Author</p>
+          <!Not a real email!!!>
+            <p>Email:Joe.Bloggs@SlotMail.org.uk</p>
+            <p>Contact No: +1 8566 28496</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
