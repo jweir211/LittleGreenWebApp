@@ -40,3 +40,7 @@ footer {
 .h {
     list-style: circle;
 }
+
+.carousel-inner img{
+  margin: auto;
+}
